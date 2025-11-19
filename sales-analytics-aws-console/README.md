@@ -1,5 +1,18 @@
 # Sales Analytics — AWS Console Project
 
+S3 (Raw Zone)
+     ↓ Trigger
+AWS Lambda (ETL Cleanup)
+     ↓
+S3 (Clean Zone)
+     ↓
+AWS Glue Crawler → Glue Data Catalog
+     ↓
+Amazon Athena (Query Engine)
+     ↓
+Excel Dashboard (Visualization)
+
+
 This repository contains the files and instructions for the **Sales Analytics Pipeline** you built using the AWS Console.
 It is designed to be a documentation + code bundle you can upload to GitHub or use in interviews.
 
@@ -41,5 +54,3 @@ This repo includes:
 - This repo is intentionally console-focused (no Terraform/CloudFormation) so it matches your project built via AWS Console.
 - All operations shown are free-tier friendly for small datasets.
 
-## License
-MIT
